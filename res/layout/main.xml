@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+	<org.oep.grenade.GrenadeView  
+		android:id="@+id/game_view"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    />
+	    
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<TextView
+			android:id="@+id/gameMessage"
+			android:text="@string/pullPin"
+			android:visibility="invisible"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="100sp"
+			android:gravity="center_horizontal"
+			android:textColor="#88ffffff"
+			android:textSize="24sp" />
+		
+		<TextView
+			android:id="@+id/grenadeCountdown"
+			android:visibility="invisible"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="100sp"
+			android:layout_alignParentBottom="true"
+			android:gravity="center_horizontal"
+			android:textColor="#88ff0000"
+			android:textSize="24sp" />
+	</RelativeLayout>
+</FrameLayout>
